@@ -147,6 +147,22 @@ REPLACE_EXACT = {
         ('qcodes', 'SweepValues'): 'qcodes.parameters',
         ('qcodes', 'combine'): 'qcodes.parameters',
         ('qcodes', 'Station'): 'qcodes.station',
+        ('qcodes.dataset.data_set', 'load_by_run_spec'): 'qcodes.dataset',
+        ('qcodes.dataset.data_set', 'load_by_id'): 'qcodes.dataset',
+        ('qcodes.instrument.specialized_parameters', 'ElapsedTimeParameter'): 'qcodes.parameters',
+        ('qcodes.dataset.experiment_container', 'new_experiment'): 'qcodes.dataset',
+        ('qcodes.dataset.experiment_container', 'experiments'): 'qcodes.dataset',
+        ('qcodes.dataset.experiment_container', 'load_experiment'): 'qcodes.dataset',
+        ('qcodes.dataset.experiment_container', 'load_experiment_by_name'): 'qcodes.dataset',
+        ('qcodes.dataset.experiment_container', 'load_last_experiment'): 'qcodes.dataset',
+        ('qcodes.dataset.experiment_settings', 'get_default_experiment_id'): 'qcodes.dataset',
+        ('qcodes.dataset.experiment_settings', 'reset_default_experiment_id'): 'qcodes.dataset',
+        ('qcodes.dataset.data_set', 'new_data_set'): 'qcodes.dataset',
+        ('qcodes.dataset.legacy_import', 'import_dat_file'): 'qcodes.dataset',
+        ('qcodes.instrument.parameter', 'ArrayParameter'): 'qcodes.parameters',
+        ('qcodes.instrument.parameter', 'MultiParameter'): 'qcodes.parameters',
+        ('qcodes.dataset.sqlite.database', 'initialise_database'): 'qcodes.dataset',
+
     },
     (3, 6): {
         ('typing_extensions', 'AsyncIterable'): 'typing',
@@ -296,6 +312,8 @@ REPLACE_MODS = {
     'six.moves.xmlrpc_client': 'xmlrpc.client',
     'six.moves.xmlrpc_server': 'xmlrpc.server',
     'xml.etree.cElementTree': 'xml.etree.ElementTree',
+    'visa': 'pyvisa',
+    'qcodes.utils.validators': 'qcodes.validators'
 }
 # END GENERATED
 
